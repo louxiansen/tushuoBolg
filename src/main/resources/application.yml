@@ -1,0 +1,23 @@
+server:             #服务端口号
+  port: 8080
+  session:
+    timeout: 180000
+spring:
+  datasource:       # 数据源
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/user-log-manager?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&nullCatalogMeansCurrent=true
+    username: root
+    password:
+    maximum-pool-size: 50
+    max-idle: 5
+    max-wait: 10000
+    max-active: 40
+  jpa:              #hibernate
+    hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate.show_sql: true
+    hibernate.format_sql: false
+    hibernate.use_sql_comments: true
+    hibernate.hbm2ddl.auto: validate
+    connection.useUnicode: true
+    connection.characterEncoding: UTF-8
+    properties:hibernate:current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
