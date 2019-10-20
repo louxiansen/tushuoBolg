@@ -5,7 +5,7 @@ server:             #服务端口号
 spring:
   datasource:       # 数据源
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/user-log-manager?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&nullCatalogMeansCurrent=true
+    url: jdbc:mysql://127.0.0.1:3306/tushuoBolg?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&nullCatalogMeansCurrent=true
     username: root
     password:
     maximum-pool-size: 50

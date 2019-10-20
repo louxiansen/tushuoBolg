@@ -8,10 +8,10 @@
 		<version>2.1.9.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.UserLogManger</groupId>
-	<artifactId>user-log-manager</artifactId>
+	<groupId>com.tushuoBolg</groupId>
+	<artifactId>tushuoBolg</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>user-log-manager</name>
+	<name>tushuoBolg</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -50,11 +50,11 @@
 			<version>4.3.1</version>
 		</dependency>
 		<!--自动编译-->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-devtools</artifactId>-->
-			<!--<optional>true</optional>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<!--hibernate-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -74,6 +74,17 @@
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.2.3</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5</version>
 		</dependency>
 	</dependencies>
 
